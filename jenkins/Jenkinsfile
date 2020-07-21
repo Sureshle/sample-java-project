@@ -7,7 +7,8 @@ pipeline
         stage('Build') {
 
             steps {
-withMaven(maven : 'apache-maven-3.6.3') {
+withMaven(jdk: 'JAVA', maven: 'maven') 
+             {
 bat'mvn clean compile'
 }
             }
