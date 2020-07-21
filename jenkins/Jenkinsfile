@@ -8,7 +8,7 @@ pipeline
 
             steps {
 
-                echo " hello"
+                sh 'mvn clean install'
             }
         }
                    
