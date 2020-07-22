@@ -13,7 +13,7 @@ pipeline
             steps {
 withMaven(jdk: 'JAVA', maven: 'maven') 
              {
-sh'mvn clean compile'
+sh'mvn clean install'
 }
             }
         }
